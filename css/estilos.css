@@ -1,0 +1,166 @@
+
+:root {
+    --bs-primary: #8BC34A; 
+    --bs-success: #4CAF50; 
+    --bs-light: #F8F9FA; 
+    --bs-secondary: #6c757d; 
+    --bs-dark: #212529;  
+}
+
+body {
+    background-color: var(--bs-light); 
+    color: var(--bs-dark);
+    font-family: 'Georgia', serif; 
+}
+
+
+#mainNav {
+    background-color: var(--bs-light); /* Fondo claro de la nav */
+    border-bottom: 1px solid #e9ecef; /* Separador sutil */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#mainNav .navbar-brand, #mainNav .nav-link {
+    color: var(--bs-dark) !important;
+    font-weight: bold;
+}
+
+#mainNav .nav-link:hover {
+    color: var(--bs-primary) !important;
+}
+
+/* Botón de Administrador con acento verde */
+.btn-outline-admin {
+    color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    transition: all 0.3s;
+}
+.btn-outline-admin:hover {
+    background-color: var(--bs-primary);
+    color: var(--bs-light);
+}
+
+/* Sección Destacada (Hero) - Fondo natural */
+#hero {
+    background: #e9f5e1; /* Verde muy pálido, casi blanco */
+    color: var(--bs-dark);
+    min-height: 80vh; /* Hacemos el hero un poco más pequeño */
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+#hero h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--bs-success); /* Título en verde profundo */
+}
+
+/* Botones principales */
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: white;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    padding: 0.75rem 2rem;
+}
+.btn-primary:hover {
+    background-color: #719b40; /* Tono más oscuro de verde */
+    border-color: #719b40;
+}
+
+/* Títulos de sección */
+.section-title {
+    color: var(--bs-success);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+
+.product-card {
+    border: 1px solid #dee2e6; 
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 15px rgba(139, 195, 74, 0.2); 
+    transform: translateY(-3px);
+}
+
+.product-card img {
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.product-card .card-title {
+    color: var(--bs-dark);
+    font-weight: bold;
+}
+
+.product-card .card-text {
+    color: var(--bs-secondary);
+}
+
+.card-price {
+    color: var(--bs-primary); 
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.btn-success {
+    background-color: var(--bs-success) !important;
+    border-color: var(--bs-success) !important;
+}
+
+
+.cta-section {
+    background: linear-gradient(135deg, #A8D18D 0%, #8BC34A 100%); 
+    color: white;
+    padding: 60px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 -5px 10px rgba(0,0,0,0.1); 
+}
+
+.cta-section h2 {
+    font-weight: 900;
+    color: white;
+    font-size: 3rem;
+}
+.cta-section p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+.cta-section .btn-warning {
+    background-color: #a8ffe9; 
+    border-color: #a8ffe9;
+    color: var(--bs-dark);
+    font-weight: bold;
+    padding: 0.9rem 2.5rem; 
+    font-size: 1.1rem;
+    border-radius: 50px; 
+    transition: all 0.3s ease;
+}
+.cta-section .btn-warning:hover {
+    background-color: #8fdcff; 
+    border-color: #8fdcff;
+    transform: translateY(-2px); 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+footer {
+    background-color: var(--bs-dark); 
+    color: var(--bs-light);
+    padding: 30px 0;
+}
+
+footer a {
+    color: var(--bs-light);
+}
+footer a:hover {
+    color: var(--bs-primary);
+}
