@@ -62,7 +62,7 @@ $view = $_GET['view'] ?? 'inicio';
             </header>
 
             <?php 
-            include 'db_conexion.php'; 
+            include_once 'db_conexion.php'; 
             
             if ($view == 'inicio'): 
             ?>
@@ -70,12 +70,12 @@ $view = $_GET['view'] ?? 'inicio';
                 
             <?php elseif ($view == 'productos'): ?>
                 <?php 
-                    include 'productos_index.php'; 
+                    include_once 'productos_index.php'; 
                 ?>
 
             <?php elseif ($view == 'tipos'): ?>
                 <?php 
-                    include 'type_crud.php'; 
+                    include_once 'type_crud.php'; 
                 ?>
 
             <?php else: ?>
