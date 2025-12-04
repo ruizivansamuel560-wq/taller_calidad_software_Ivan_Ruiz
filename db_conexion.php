@@ -2,7 +2,7 @@
 
 $servername = "localhost";
 $username = "root";       
-$password = "";           
+$password = "contraseña_segura";           
 
 $dbname = "mini_market_bd"; 
 
