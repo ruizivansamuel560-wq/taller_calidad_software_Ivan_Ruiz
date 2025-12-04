@@ -16,7 +16,7 @@ if ($conn->connect_error) {
 }
 
 $conn->set_charset("utf8");
-
+define('CRUD_REDIRECT', 'Location: type_crud.php');
 // =========================
 // CREAR / EDITAR
 // =========================
@@ -33,7 +33,7 @@ if (isset($_POST['save_type'])) {
 
     if ($check->num_rows > 0) {
         $_SESSION['msg'] = "Ese tipo ya existe.";
-        header("Location: type_crud.php");
+        header(CRUD_REDIRECT);
         exit;
     }
     $check->close();
@@ -54,7 +54,7 @@ if (isset($_POST['save_type'])) {
         $_SESSION['msg'] = "✔ Tipo creado correctamente.";
     }
 
-    header("Location: type_crud.php");
+    header(CRUD_REDIRECT);
     exit;
 }
 
@@ -80,7 +80,7 @@ if (isset($_GET['delete'])) {
     }
 
     $stmt->close();
-    header("Location: type_crud.php");
+    header(CRUD_REDIRECT);
     exit;
 }
 
